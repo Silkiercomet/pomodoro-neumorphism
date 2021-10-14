@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --mainColor:#3c393c;
+    --secondarycolor:#5f5d62;
+    --textColor:#908e95;
+    --porgressBar:#52234b;
+    --progressBar:#e13644;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--mainColor);
+    display: grid;
+    place-items: center;
+}
+
+.pomodoro__watch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.pomodoro{
+    border-radius: 50%;
+    background: linear-gradient(225deg, #373638, #414042);
+    box-shadow:  -20px 20px 27px #29292a,
+                 20px -20px 27px #514f52;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+}
+.watch{
+    font-size: 3.5rem;
+    color: var(--textColor);
+
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:not(:last-child){
+    margin-right: 1.5rem;
+}
+.btn{
+    background-color: var(--secondarycolor);
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    color: var(--textColor);
+    text-decoration: none;
+    box-shadow:
+    1px 2px 2px hsl(220deg 60% 50% / 0.333),
+    2px 4px 4px hsl(220deg 60% 50% / 0.333),
+    3px 6px 6px hsl(220deg 60% 50% / 0.333);
+    transition: 400ms ease-in-out;
+}
+
+.btn:hover{
+    box-shadow:
+    1px 2px 2px hsl(326, 95%, 35%),
+    2px 4px 4px hsl(326, 95%, 35%),
+    3px 6px 6px hsl(326, 95%, 35%);
+}
+span{
+    letter-spacing: 3px;
+}
+.watch{
+    min-width: 161px;
+}
+
+
+
+/* progress bar 
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+.circular{
+    height:320px;
+    width: 320px;
+    position: relative;  
+    border:solid green 1px;
+}
+
+.circular .inner{
+    position: absolute;
+    z-index: 6;
+
+}
+.bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+   
+}
+.circle .bar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 50%;
+    clip: rect(0px, 50px, 100px, 0px);
+    background: #4158d0;
+  }
+  .circle .left .progress{
+    z-index:1;
+    animation: left 4s linear both;
+  }
+  @keyframes left{
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .right {
+    transform: rotate(180deg);
+    z-index:3;
+   
+  }
+  .circle .right .progress{
+    animation: right 4s linear both;
+    animation-delay:4s;
+  }
+  @keyframes right{
+    100%{
+      transform: rotate(180deg);
+    }
+  }*/
