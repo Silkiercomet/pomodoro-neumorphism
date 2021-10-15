@@ -7,14 +7,17 @@ const start = () =>{
  }
 
 const pomodoro = () => {
-        if(sec<59){
+        if(sec<59 && sec < 9){
+        sec++;
+        document.querySelector(".sec").innerHTML = `0${sec}`;
+        } else if(sec<59){
         sec++;
         document.querySelector(".sec").innerHTML = sec;
         }else if(sec==59){
         min--;
         sec=1;
         document.querySelector(".min").innerHTML = min;
-        document.querySelector(".sec").innerHTML = sec;         
+        document.querySelector(".sec").innerHTML = `0${sec}`;         
         }
     
         if(min==25){
